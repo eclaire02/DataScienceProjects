@@ -1,0 +1,75 @@
+Test Cases for input1.txt
+
+1.  python3 find_route.py input1.txt Denver Bremen
+
+    Should print:
+    error: city not included in the input
+
+2.  python3 find_route.py input2.txt Munich Berlin
+
+    Should print:
+    distance: 725 km
+    route:
+    Munich to Nuremberg, 171 km
+    Nuremberg to Leipzig, 263 km
+    Leipzig to Magdeburg, 125 km
+    Magdeburg to Berlin, 166 km
+
+3.  python3 find_route.py input1.txt Munich Munich
+
+    Should print:
+    distance: 0 km
+    route:
+    none
+
+4.  python3 find_route.py input1.txt Munich London
+
+    Should print:
+    distance: infinity
+    route:
+    none
+
+5. python3 find_route.py input1.txt Stuttgart Kassel
+
+    Should print:
+    distance: 385 km
+    route:
+    Stuttgart to Frankfurt, 200 km
+    Frankfurt to Kassel, 185 km
+
+
+Test Cases for inputMusson.txt
+
+1.  python3 find_route.py inputMusson.txt Disney Denver
+
+    Should print:
+    error: city not included in the input
+
+2.  python3 find_route.py inputMusson.txt Disney Dog
+
+    Should print:
+    distance: infinity
+    route:
+    none
+
+3.  python3 find_route.py inputMusson.txt Cat Imaginary
+
+    Should print:
+    distance: 89 km
+    route:
+    Cat to Bug, 46 km
+    Bug to Imaginary, 43 km
+
+4.  python3 find_route.py inputMusson.txt Cat Bug
+
+    Should print:
+    distance: 46 km
+    route:
+    Cat to Bug, 46 km
+
+5.  python3 find_route.py inputMusson.txt Cat Cat
+
+    Should print:
+    distance: 0 km
+    route:
+    none
